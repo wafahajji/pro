@@ -9,4 +9,8 @@ import java.util.List;
 @Repository
 public interface AvailabilityRepository extends CrudRepository<Availability, String> {
     List<Availability> findByPractitionerId(Integer id);
+
+    void deleteAvailabilitiesByPractitionerId(Integer practitionerId);
+
+
 }
